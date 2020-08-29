@@ -260,5 +260,10 @@ namespace BookIT.WinUI.Smjestaji
                 e.SuppressKeyPress = true;
         }
 
+        private void frmUrediSobu_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

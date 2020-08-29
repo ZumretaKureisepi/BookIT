@@ -73,5 +73,11 @@ namespace BookIT.WinUI.Smjestaji
         {
             await BindForm();
         }
+
+        private void frmSmjestaji_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

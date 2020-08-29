@@ -156,6 +156,10 @@ namespace BookIT.WinUI.Smjestaji
 
         }
 
-     
+        private void frmDodajSobu_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

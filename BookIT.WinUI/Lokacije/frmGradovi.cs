@@ -90,5 +90,11 @@ namespace BookIT.WinUI.Lokacije
             if (e.KeyCode != Keys.Up && e.KeyCode != Keys.Down)
                 e.SuppressKeyPress = true;
         }
+
+        private void frmGradovi_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

@@ -33,9 +33,6 @@
             this.cmbSmjestaj = new System.Windows.Forms.ComboBox();
             this.btnPretrazi = new System.Windows.Forms.Button();
             this.dgvRezervacije = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.close = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.RezervacijaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Smjestaj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sobe = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,14 +41,17 @@
             this.Guests = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRezervacije)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbSmjestaj
             // 
-            this.cmbSmjestaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.cmbSmjestaj.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbSmjestaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbSmjestaj.ForeColor = System.Drawing.Color.Aquamarine;
+            this.cmbSmjestaj.ForeColor = System.Drawing.Color.DimGray;
             this.cmbSmjestaj.FormattingEnabled = true;
             this.cmbSmjestaj.Location = new System.Drawing.Point(135, 48);
             this.cmbSmjestaj.Name = "cmbSmjestaj";
@@ -79,8 +79,8 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aquamarine;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvRezervacije.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRezervacije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -98,52 +98,21 @@
             this.dgvRezervacije.Name = "dgvRezervacije";
             this.dgvRezervacije.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvRezervacije.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvRezervacije.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            this.dgvRezervacije.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvRezervacije.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvRezervacije.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DimGray;
             this.dgvRezervacije.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.dgvRezervacije.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvRezervacije.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.DimGray;
             this.dgvRezervacije.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvRezervacije.Size = new System.Drawing.Size(798, 288);
             this.dgvRezervacije.TabIndex = 2;
             this.dgvRezervacije.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRezervacije_CellDoubleClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Smještaj:";
-            // 
-            // close
-            // 
-            this.close.AutoSize = true;
-            this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
-            this.close.Location = new System.Drawing.Point(838, 5);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(16, 16);
-            this.close.TabIndex = 15;
-            this.close.Text = "X";
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 24);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Pretraži rezervacije";
             // 
             // RezervacijaId
             // 
@@ -204,11 +173,42 @@
             this.Status.Name = "Status";
             this.Status.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(37, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Smještaj:";
+            // 
+            // close
+            // 
+            this.close.AutoSize = true;
+            this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.ForeColor = System.Drawing.Color.DimGray;
+            this.close.Location = new System.Drawing.Point(838, 5);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(16, 16);
+            this.close.TabIndex = 15;
+            this.close.Text = "X";
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 24);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Pretraži rezervacije";
+            // 
             // frmRezervacije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(855, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.close);
@@ -216,13 +216,14 @@
             this.Controls.Add(this.dgvRezervacije);
             this.Controls.Add(this.btnPretrazi);
             this.Controls.Add(this.cmbSmjestaj);
-            this.ForeColor = System.Drawing.Color.Aquamarine;
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmRezervacije";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Rezervacije";
             this.Load += new System.EventHandler(this.frmRezervacije_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmRezervacije_Paint);
             this.Resize += new System.EventHandler(this.frmRezervacije_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRezervacije)).EndInit();
             this.ResumeLayout(false);

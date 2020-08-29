@@ -30,7 +30,6 @@ namespace BookIT.WinUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainAdmin));
             this.btnMojProfil = new System.Windows.Forms.Button();
             this.close = new System.Windows.Forms.Label();
             this.btnLokacije = new System.Windows.Forms.Button();
@@ -56,7 +55,7 @@ namespace BookIT.WinUI
             this.btnMojProfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnMojProfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMojProfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMojProfil.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnMojProfil.ForeColor = System.Drawing.Color.DimGray;
             this.btnMojProfil.Image = global::BookIT.WinUI.Properties.Resources.profil;
             this.btnMojProfil.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnMojProfil.Location = new System.Drawing.Point(0, 34);
@@ -75,7 +74,7 @@ namespace BookIT.WinUI
             // 
             this.close.AutoSize = true;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
+            this.close.ForeColor = System.Drawing.Color.DimGray;
             this.close.Location = new System.Drawing.Point(543, 8);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(16, 16);
@@ -93,7 +92,7 @@ namespace BookIT.WinUI
             this.btnLokacije.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnLokacije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLokacije.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLokacije.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnLokacije.ForeColor = System.Drawing.Color.DimGray;
             this.btnLokacije.Image = global::BookIT.WinUI.Properties.Resources.lokacije;
             this.btnLokacije.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnLokacije.Location = new System.Drawing.Point(0, 436);
@@ -117,7 +116,7 @@ namespace BookIT.WinUI
             this.btnDodatneUsluge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnDodatneUsluge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDodatneUsluge.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnDodatneUsluge.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnDodatneUsluge.ForeColor = System.Drawing.Color.DimGray;
             this.btnDodatneUsluge.Image = global::BookIT.WinUI.Properties.Resources.dodatne_usluge;
             this.btnDodatneUsluge.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnDodatneUsluge.Location = new System.Drawing.Point(0, 302);
@@ -142,8 +141,8 @@ namespace BookIT.WinUI
             this.btnKorisnici.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnKorisnici.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKorisnici.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKorisnici.ForeColor = System.Drawing.Color.Aquamarine;
-            this.btnKorisnici.Image = ((System.Drawing.Image)(resources.GetObject("btnKorisnici.Image")));
+            this.btnKorisnici.ForeColor = System.Drawing.Color.DimGray;
+            this.btnKorisnici.Image = global::BookIT.WinUI.Properties.Resources.korisnici;
             this.btnKorisnici.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnKorisnici.Location = new System.Drawing.Point(0, 168);
             this.btnKorisnici.Name = "btnKorisnici";
@@ -160,7 +159,7 @@ namespace BookIT.WinUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(186, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 24);
@@ -169,9 +168,9 @@ namespace BookIT.WinUI
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel1.ForeColor = System.Drawing.Color.DimGray;
             this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(570, 1);
@@ -187,7 +186,7 @@ namespace BookIT.WinUI
             this.btnKorisniciDodaj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnKorisniciDodaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKorisniciDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKorisniciDodaj.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnKorisniciDodaj.ForeColor = System.Drawing.Color.DimGray;
             this.btnKorisniciDodaj.Image = global::BookIT.WinUI.Properties.Resources.korisnici_dodaj;
             this.btnKorisniciDodaj.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnKorisniciDodaj.Location = new System.Drawing.Point(232, 168);
@@ -213,7 +212,7 @@ namespace BookIT.WinUI
             this.btnKorisniciPretraga.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnKorisniciPretraga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKorisniciPretraga.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKorisniciPretraga.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnKorisniciPretraga.ForeColor = System.Drawing.Color.DimGray;
             this.btnKorisniciPretraga.Image = global::BookIT.WinUI.Properties.Resources.korisnici_pretraga;
             this.btnKorisniciPretraga.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnKorisniciPretraga.Location = new System.Drawing.Point(116, 168);
@@ -239,7 +238,7 @@ namespace BookIT.WinUI
             this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnLogout.ForeColor = System.Drawing.Color.DimGray;
             this.btnLogout.Image = global::BookIT.WinUI.Properties.Resources.logout;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnLogout.Location = new System.Drawing.Point(520, 32);
@@ -263,7 +262,7 @@ namespace BookIT.WinUI
             this.btnGradovi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnGradovi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGradovi.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGradovi.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnGradovi.ForeColor = System.Drawing.Color.DimGray;
             this.btnGradovi.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnGradovi.Location = new System.Drawing.Point(232, 436);
             this.btnGradovi.Name = "btnGradovi";
@@ -285,7 +284,7 @@ namespace BookIT.WinUI
             this.btnDrzave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(34)))));
             this.btnDrzave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDrzave.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDrzave.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnDrzave.ForeColor = System.Drawing.Color.DimGray;
             this.btnDrzave.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnDrzave.Location = new System.Drawing.Point(116, 436);
             this.btnDrzave.Name = "btnDrzave";
@@ -301,7 +300,7 @@ namespace BookIT.WinUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(566, 575);
             this.Controls.Add(this.btnDrzave);
             this.Controls.Add(this.btnGradovi);

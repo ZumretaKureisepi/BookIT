@@ -52,7 +52,7 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -65,17 +65,17 @@
             this.dgvUsluge.Name = "dgvUsluge";
             this.dgvUsluge.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUsluge.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvUsluge.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            this.dgvUsluge.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvUsluge.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvUsluge.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DimGray;
             this.dgvUsluge.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.dgvUsluge.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvUsluge.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.DimGray;
             this.dgvUsluge.Size = new System.Drawing.Size(250, 277);
             this.dgvUsluge.TabIndex = 0;
             // 
@@ -98,9 +98,9 @@
             // 
             // txtUslugaNaziv
             // 
-            this.txtUslugaNaziv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtUslugaNaziv.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtUslugaNaziv.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUslugaNaziv.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtUslugaNaziv.ForeColor = System.Drawing.Color.DimGray;
             this.txtUslugaNaziv.Location = new System.Drawing.Point(175, 47);
             this.txtUslugaNaziv.Name = "txtUslugaNaziv";
             this.txtUslugaNaziv.Size = new System.Drawing.Size(112, 13);
@@ -124,9 +124,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel1.ForeColor = System.Drawing.Color.DimGray;
             this.panel1.Location = new System.Drawing.Point(175, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(112, 1);
@@ -136,7 +136,7 @@
             // 
             this.close.AutoSize = true;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
+            this.close.ForeColor = System.Drawing.Color.DimGray;
             this.close.Location = new System.Drawing.Point(287, 9);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(16, 16);
@@ -160,7 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(318, 541);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.close);
@@ -169,13 +169,14 @@
             this.Controls.Add(this.txtUslugaNaziv);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvUsluge);
-            this.ForeColor = System.Drawing.Color.Aquamarine;
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmDodatneUsluge";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dodatne usluge";
             this.Load += new System.EventHandler(this.frmDodatneUsluge_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmDodatneUsluge_Paint);
             this.Resize += new System.EventHandler(this.frmDodatneUsluge_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsluge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();

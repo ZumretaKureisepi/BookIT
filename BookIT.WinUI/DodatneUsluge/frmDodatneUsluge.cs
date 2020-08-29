@@ -71,5 +71,11 @@ namespace BookIT.WinUI.DodatneUsluge
             close.Location = new Point(this.Width - 24, 5);
 
         }
+
+        private void frmDodatneUsluge_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

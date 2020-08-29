@@ -41,13 +41,13 @@
             this.lblAdresaVlasnikaSmjestaja = new System.Windows.Forms.Label();
             this.lblImeVlasnikaSmjestaja = new System.Windows.Forms.Label();
             this.dgvDetaljiFakture = new System.Windows.Forms.DataGridView();
+            this.DodatnaUslugaRezervacijaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DodatnaUsluga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUkupanIznos = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Label();
             this.lblNazivSmjestaja = new System.Windows.Forms.Label();
-            this.DodatnaUslugaRezervacijaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DodatnaUsluga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetaljiFakture)).BeginInit();
@@ -76,7 +76,7 @@
             this.groupBox1.Controls.Add(this.lblAdresaKlijenta);
             this.groupBox1.Controls.Add(this.lblImeKlijenta);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.groupBox1.ForeColor = System.Drawing.Color.DimGray;
             this.groupBox1.Location = new System.Drawing.Point(46, 91);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
@@ -120,7 +120,7 @@
             this.groupBox2.Controls.Add(this.lblAdresaVlasnikaSmjestaja);
             this.groupBox2.Controls.Add(this.lblImeVlasnikaSmjestaja);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Aquamarine;
+            this.groupBox2.ForeColor = System.Drawing.Color.DimGray;
             this.groupBox2.Location = new System.Drawing.Point(308, 91);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 100);
@@ -166,7 +166,7 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -181,59 +181,20 @@
             this.dgvDetaljiFakture.Name = "dgvDetaljiFakture";
             this.dgvDetaljiFakture.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDetaljiFakture.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvDetaljiFakture.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            this.dgvDetaljiFakture.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvDetaljiFakture.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvDetaljiFakture.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DimGray;
             this.dgvDetaljiFakture.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.dgvDetaljiFakture.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvDetaljiFakture.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.DimGray;
             this.dgvDetaljiFakture.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetaljiFakture.Size = new System.Drawing.Size(462, 155);
             this.dgvDetaljiFakture.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 435);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Ukupno:";
-            // 
-            // lblUkupanIznos
-            // 
-            this.lblUkupanIznos.AutoSize = true;
-            this.lblUkupanIznos.Location = new System.Drawing.Point(196, 435);
-            this.lblUkupanIznos.Name = "lblUkupanIznos";
-            this.lblUkupanIznos.Size = new System.Drawing.Size(35, 13);
-            this.lblUkupanIznos.TabIndex = 11;
-            this.lblUkupanIznos.Text = "label3";
-            // 
-            // close
-            // 
-            this.close.AutoSize = true;
-            this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
-            this.close.Location = new System.Drawing.Point(547, 0);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(16, 16);
-            this.close.TabIndex = 15;
-            this.close.Text = "X";
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
-            // lblNazivSmjestaja
-            // 
-            this.lblNazivSmjestaja.AutoSize = true;
-            this.lblNazivSmjestaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNazivSmjestaja.Location = new System.Drawing.Point(41, 27);
-            this.lblNazivSmjestaja.Name = "lblNazivSmjestaja";
-            this.lblNazivSmjestaja.Size = new System.Drawing.Size(0, 20);
-            this.lblNazivSmjestaja.TabIndex = 16;
             // 
             // DodatnaUslugaRezervacijaId
             // 
@@ -257,11 +218,50 @@
             this.Cijena.Name = "Cijena";
             this.Cijena.ReadOnly = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(46, 435);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Ukupno:";
+            // 
+            // lblUkupanIznos
+            // 
+            this.lblUkupanIznos.AutoSize = true;
+            this.lblUkupanIznos.Location = new System.Drawing.Point(196, 435);
+            this.lblUkupanIznos.Name = "lblUkupanIznos";
+            this.lblUkupanIznos.Size = new System.Drawing.Size(35, 13);
+            this.lblUkupanIznos.TabIndex = 11;
+            this.lblUkupanIznos.Text = "label3";
+            // 
+            // close
+            // 
+            this.close.AutoSize = true;
+            this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.ForeColor = System.Drawing.Color.DimGray;
+            this.close.Location = new System.Drawing.Point(547, 0);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(16, 16);
+            this.close.TabIndex = 15;
+            this.close.Text = "X";
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
+            // lblNazivSmjestaja
+            // 
+            this.lblNazivSmjestaja.AutoSize = true;
+            this.lblNazivSmjestaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNazivSmjestaja.Location = new System.Drawing.Point(41, 27);
+            this.lblNazivSmjestaja.Name = "lblNazivSmjestaja";
+            this.lblNazivSmjestaja.Size = new System.Drawing.Size(0, 20);
+            this.lblNazivSmjestaja.TabIndex = 16;
+            // 
             // frmFakturaDetalji
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(562, 462);
             this.Controls.Add(this.lblNazivSmjestaja);
             this.Controls.Add(this.close);
@@ -272,13 +272,14 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblDatumFakture);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.Aquamarine;
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmFakturaDetalji";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Detalji fakture";
             this.Load += new System.EventHandler(this.frmFakturaDetalji_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmFakturaDetalji_Paint);
             this.Resize += new System.EventHandler(this.frmFakturaDetalji_Resize);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

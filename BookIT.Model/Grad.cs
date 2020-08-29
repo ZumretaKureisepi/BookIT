@@ -10,10 +10,18 @@ namespace BookIT.Model
         public int GradId { get; set; }
         public string Naziv { get; set; }
         public Drzava Drzava { get; set; }
-        public string Grad_Drzava { get => Naziv + ", " + Drzava?.Naziv; }
+        public string Grad_Drzava
+        {
+            get
+            {
+                if (Drzava == null)
+                    return Naziv;
+                return Naziv + ", " + Drzava?.Naziv;
+            }
+        }
         public override string ToString()
         {
-            return Naziv+", "+Drzava.Naziv;
+            return Naziv + ", " + Drzava.Naziv;
         }
 
     }

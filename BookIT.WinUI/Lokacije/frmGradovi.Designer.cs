@@ -48,9 +48,9 @@
             // 
             // txtGradNaziv
             // 
-            this.txtGradNaziv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtGradNaziv.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtGradNaziv.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtGradNaziv.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtGradNaziv.ForeColor = System.Drawing.Color.DimGray;
             this.txtGradNaziv.Location = new System.Drawing.Point(173, 46);
             this.txtGradNaziv.Name = "txtGradNaziv";
             this.txtGradNaziv.Size = new System.Drawing.Size(100, 13);
@@ -85,8 +85,8 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aquamarine;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDrzave.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDrzave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -97,17 +97,17 @@
             this.dgvDrzave.Name = "dgvDrzave";
             this.dgvDrzave.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDrzave.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvDrzave.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            this.dgvDrzave.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvDrzave.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvDrzave.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DimGray;
             this.dgvDrzave.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.dgvDrzave.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvDrzave.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.DimGray;
             this.dgvDrzave.Size = new System.Drawing.Size(326, 260);
             this.dgvDrzave.TabIndex = 6;
             // 
@@ -130,9 +130,9 @@
             // 
             // cmbDrzava
             // 
-            this.cmbDrzava.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.cmbDrzava.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbDrzava.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbDrzava.ForeColor = System.Drawing.Color.Aquamarine;
+            this.cmbDrzava.ForeColor = System.Drawing.Color.DimGray;
             this.cmbDrzava.FormattingEnabled = true;
             this.cmbDrzava.Location = new System.Drawing.Point(173, 99);
             this.cmbDrzava.Name = "cmbDrzava";
@@ -147,9 +147,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel1.ForeColor = System.Drawing.Color.DimGray;
             this.panel1.Location = new System.Drawing.Point(173, 60);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(100, 1);
@@ -159,7 +159,7 @@
             // 
             this.close.AutoSize = true;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
+            this.close.ForeColor = System.Drawing.Color.DimGray;
             this.close.Location = new System.Drawing.Point(407, 2);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(16, 16);
@@ -183,7 +183,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(426, 541);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.close);
@@ -194,13 +194,14 @@
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtGradNaziv);
-            this.ForeColor = System.Drawing.Color.Aquamarine;
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmGradovi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Gradovi";
             this.Load += new System.EventHandler(this.frmGradovi_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmGradovi_Paint);
             this.Resize += new System.EventHandler(this.frmGradovi_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrzave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();

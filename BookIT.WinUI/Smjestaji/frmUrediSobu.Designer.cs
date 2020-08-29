@@ -70,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(35, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
@@ -80,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(35, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 13);
@@ -90,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Location = new System.Drawing.Point(35, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 13);
@@ -100,7 +100,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
             this.label4.Location = new System.Drawing.Point(35, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 13);
@@ -110,7 +110,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label5.ForeColor = System.Drawing.Color.DimGray;
             this.label5.Location = new System.Drawing.Point(35, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 13);
@@ -119,9 +119,9 @@
             // 
             // txtNazivSobe
             // 
-            this.txtNazivSobe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtNazivSobe.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNazivSobe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNazivSobe.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtNazivSobe.ForeColor = System.Drawing.Color.DimGray;
             this.txtNazivSobe.Location = new System.Drawing.Point(182, 41);
             this.txtNazivSobe.Name = "txtNazivSobe";
             this.txtNazivSobe.Size = new System.Drawing.Size(145, 13);
@@ -130,9 +130,9 @@
             // 
             // txtBrojMalihKreveta
             // 
-            this.txtBrojMalihKreveta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtBrojMalihKreveta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtBrojMalihKreveta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBrojMalihKreveta.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtBrojMalihKreveta.ForeColor = System.Drawing.Color.DimGray;
             this.txtBrojMalihKreveta.Location = new System.Drawing.Point(182, 80);
             this.txtBrojMalihKreveta.Name = "txtBrojMalihKreveta";
             this.txtBrojMalihKreveta.Size = new System.Drawing.Size(145, 13);
@@ -141,9 +141,9 @@
             // 
             // txtBrojVelikihKreveta
             // 
-            this.txtBrojVelikihKreveta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtBrojVelikihKreveta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtBrojVelikihKreveta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBrojVelikihKreveta.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtBrojVelikihKreveta.ForeColor = System.Drawing.Color.DimGray;
             this.txtBrojVelikihKreveta.Location = new System.Drawing.Point(182, 125);
             this.txtBrojVelikihKreveta.Name = "txtBrojVelikihKreveta";
             this.txtBrojVelikihKreveta.Size = new System.Drawing.Size(145, 13);
@@ -152,9 +152,9 @@
             // 
             // txtVelicinaSobe
             // 
-            this.txtVelicinaSobe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtVelicinaSobe.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtVelicinaSobe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtVelicinaSobe.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtVelicinaSobe.ForeColor = System.Drawing.Color.DimGray;
             this.txtVelicinaSobe.Location = new System.Drawing.Point(182, 167);
             this.txtVelicinaSobe.Name = "txtVelicinaSobe";
             this.txtVelicinaSobe.Size = new System.Drawing.Size(29, 13);
@@ -164,7 +164,7 @@
             // btnSacuvaj
             // 
             this.btnSacuvaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSacuvaj.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnSacuvaj.ForeColor = System.Drawing.Color.DimGray;
             this.btnSacuvaj.Location = new System.Drawing.Point(211, 240);
             this.btnSacuvaj.Name = "btnSacuvaj";
             this.btnSacuvaj.Size = new System.Drawing.Size(120, 23);
@@ -175,9 +175,9 @@
             // 
             // txtCijena
             // 
-            this.txtCijena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtCijena.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCijena.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCijena.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtCijena.ForeColor = System.Drawing.Color.DimGray;
             this.txtCijena.Location = new System.Drawing.Point(182, 207);
             this.txtCijena.Name = "txtCijena";
             this.txtCijena.Size = new System.Drawing.Size(145, 13);
@@ -191,7 +191,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label6.ForeColor = System.Drawing.Color.DimGray;
             this.label6.Location = new System.Drawing.Point(23, 66);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 13);
@@ -201,7 +201,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label7.ForeColor = System.Drawing.Color.DimGray;
             this.label7.Location = new System.Drawing.Point(23, 28);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 13);
@@ -221,9 +221,9 @@
             // 
             // txtCijenaDodatneUsluge
             // 
-            this.txtCijenaDodatneUsluge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtCijenaDodatneUsluge.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCijenaDodatneUsluge.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCijenaDodatneUsluge.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtCijenaDodatneUsluge.ForeColor = System.Drawing.Color.DimGray;
             this.txtCijenaDodatneUsluge.Location = new System.Drawing.Point(174, 66);
             this.txtCijenaDodatneUsluge.Name = "txtCijenaDodatneUsluge";
             this.txtCijenaDodatneUsluge.Size = new System.Drawing.Size(100, 13);
@@ -232,9 +232,9 @@
             // 
             // cmbDodatneUsluge
             // 
-            this.cmbDodatneUsluge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.cmbDodatneUsluge.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbDodatneUsluge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbDodatneUsluge.ForeColor = System.Drawing.Color.Aquamarine;
+            this.cmbDodatneUsluge.ForeColor = System.Drawing.Color.DimGray;
             this.cmbDodatneUsluge.FormattingEnabled = true;
             this.cmbDodatneUsluge.Location = new System.Drawing.Point(174, 28);
             this.cmbDodatneUsluge.Name = "cmbDodatneUsluge";
@@ -251,8 +251,8 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aquamarine;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDodatneUsluge.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDodatneUsluge.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -265,17 +265,17 @@
             this.dgvDodatneUsluge.Name = "dgvDodatneUsluge";
             this.dgvDodatneUsluge.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDodatneUsluge.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvDodatneUsluge.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            this.dgvDodatneUsluge.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvDodatneUsluge.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvDodatneUsluge.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DimGray;
             this.dgvDodatneUsluge.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.dgvDodatneUsluge.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvDodatneUsluge.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.DimGray;
             this.dgvDodatneUsluge.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDodatneUsluge.Size = new System.Drawing.Size(257, 178);
             this.dgvDodatneUsluge.TabIndex = 14;
@@ -311,7 +311,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.cmbDodatneUsluge);
             this.groupBox1.Controls.Add(this.btnDodaj);
-            this.groupBox1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.groupBox1.ForeColor = System.Drawing.Color.DimGray;
             this.groupBox1.Location = new System.Drawing.Point(12, 269);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(315, 353);
@@ -321,9 +321,9 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel6.BackColor = System.Drawing.Color.DimGray;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel6.ForeColor = System.Drawing.Color.DimGray;
             this.panel6.Location = new System.Drawing.Point(173, 78);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(101, 1);
@@ -332,7 +332,7 @@
             // btnUrediGaleriju
             // 
             this.btnUrediGaleriju.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrediGaleriju.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnUrediGaleriju.ForeColor = System.Drawing.Color.DimGray;
             this.btnUrediGaleriju.Location = new System.Drawing.Point(38, 240);
             this.btnUrediGaleriju.Name = "btnUrediGaleriju";
             this.btnUrediGaleriju.Size = new System.Drawing.Size(120, 23);
@@ -343,9 +343,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel1.ForeColor = System.Drawing.Color.DimGray;
             this.panel1.Location = new System.Drawing.Point(181, 53);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(146, 1);
@@ -353,9 +353,9 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel2.ForeColor = System.Drawing.Color.DimGray;
             this.panel2.Location = new System.Drawing.Point(181, 92);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(146, 1);
@@ -363,9 +363,9 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel3.BackColor = System.Drawing.Color.DimGray;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel3.ForeColor = System.Drawing.Color.DimGray;
             this.panel3.Location = new System.Drawing.Point(181, 137);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(146, 1);
@@ -373,9 +373,9 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel4.BackColor = System.Drawing.Color.DimGray;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel4.ForeColor = System.Drawing.Color.DimGray;
             this.panel4.Location = new System.Drawing.Point(181, 179);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(146, 1);
@@ -383,9 +383,9 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel5.BackColor = System.Drawing.Color.DimGray;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel5.ForeColor = System.Drawing.Color.DimGray;
             this.panel5.Location = new System.Drawing.Point(181, 219);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(146, 1);
@@ -395,7 +395,7 @@
             // 
             this.close.AutoSize = true;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
+            this.close.ForeColor = System.Drawing.Color.DimGray;
             this.close.Location = new System.Drawing.Point(340, 2);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(16, 16);
@@ -406,7 +406,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label8.ForeColor = System.Drawing.Color.DimGray;
             this.label8.Location = new System.Drawing.Point(207, 166);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 13);
@@ -418,7 +418,7 @@
             this.AcceptButton = this.btnSacuvaj;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(356, 638);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.close);
@@ -440,13 +440,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.Aquamarine;
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmUrediSobu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Uredi sobu";
             this.Load += new System.EventHandler(this.frmUrediSobu_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmUrediSobu_Paint);
             this.Resize += new System.EventHandler(this.frmUrediSobu_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDodatneUsluge)).EndInit();

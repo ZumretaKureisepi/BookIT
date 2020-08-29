@@ -231,5 +231,11 @@ namespace BookIT.WinUI
                 errorProvider.SetError(cmbBox, null);
             }
         }
+
+        private void frmRegistracija_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

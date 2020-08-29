@@ -3,8 +3,6 @@ using BookIT.WinUI.MojProfil;
 using BookIT.WinUI.Properties;
 using BookIT.WinUI.Rezervacije;
 using BookIT.WinUI.Smjestaji;
-using MaterialSkin;
-using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +15,7 @@ using System.Windows.Forms;
 
 namespace BookIT.WinUI
 {
-    public partial class frmMain : MaterialForm
+    public partial class frmMain : Form
     {
         private readonly int initialWidth;
 
@@ -30,18 +28,6 @@ namespace BookIT.WinUI
         public frmMain()
         {
             InitializeComponent();
-
-            // Create a material theme manager and add the form to manage (this)
-            MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-
-            // Configure color schema
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Grey300, Primary.Grey200,
-                Primary.Grey100, Accent.Green100,
-                TextShade.BLACK
-            );
 
             initialWidth = this.Size.Width;
         }
@@ -317,9 +303,8 @@ namespace BookIT.WinUI
                 newWidth = btnSmjestaj.Width + activeFrm.Width;
             }
 
-            this.Width = newWidth;
-            //this.panel1.Width = newWidth;
-            //this.close.Location = new Point(this.Width - 24, 5);
+            this.Width = this.panel1.Width = this.label1.Width = newWidth;
+            this.close.Location = new Point(this.Width - 24, 5);
         }
 
         private void btnSmjestajiDodaj_Click(object sender, EventArgs e)
@@ -340,13 +325,14 @@ namespace BookIT.WinUI
             //    frm.Width = initialWidth - btnSmjestaj.Width;
             //}
             //else
-            this.Width = btnSmjestaj.Width + frm.Width;
+            this.Width = panel1.Width = this.label1.Width = btnSmjestaj.Width + frm.Width;
 
-            //panel1.Width = this.Width;
+            this.close.Location = new Point(this.Width - 24, 5);
 
-            //this.close.Location = new Point(this.Width - 24, 5);
+            frm.Location = new Point(this.Location.X + btnSmjestaj.Width - 2, this.Location.Y + btnMojProfil.Location.Y);
+            if (frm.Height < 539)
+                frm.Height = 539;
 
-            frm.Location = new Point(this.Location.X + btnSmjestaj.Width + 1, this.Location.Y + btnMojProfil.Location.Y);
             frm.FormClosed += Frm_FormClosed;
         }
 
@@ -395,5 +381,6 @@ namespace BookIT.WinUI
         {
             (sender as Button).Image = Resources.logout;
         }
+
     }
 }

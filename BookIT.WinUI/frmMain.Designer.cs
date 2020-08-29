@@ -37,6 +37,9 @@ namespace BookIT.WinUI
             this.btnSmjestajiDodaj = new System.Windows.Forms.Button();
             this.btnSmjestajiPretraga = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnMojProfil
@@ -53,7 +56,7 @@ namespace BookIT.WinUI
             this.btnMojProfil.ForeColor = System.Drawing.Color.DimGray;
             this.btnMojProfil.Image = global::BookIT.WinUI.Properties.Resources.profil;
             this.btnMojProfil.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnMojProfil.Location = new System.Drawing.Point(0, 65);
+            this.btnMojProfil.Location = new System.Drawing.Point(0, 50);
             this.btnMojProfil.Name = "btnMojProfil";
             this.btnMojProfil.Size = new System.Drawing.Size(110, 134);
             this.btnMojProfil.TabIndex = 1;
@@ -78,7 +81,7 @@ namespace BookIT.WinUI
             this.btnRezervacije.ForeColor = System.Drawing.Color.DimGray;
             this.btnRezervacije.Image = global::BookIT.WinUI.Properties.Resources.rezervacije;
             this.btnRezervacije.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRezervacije.Location = new System.Drawing.Point(0, 470);
+            this.btnRezervacije.Location = new System.Drawing.Point(0, 455);
             this.btnRezervacije.Name = "btnRezervacije";
             this.btnRezervacije.Size = new System.Drawing.Size(110, 134);
             this.btnRezervacije.TabIndex = 4;
@@ -103,7 +106,7 @@ namespace BookIT.WinUI
             this.btnFakture.ForeColor = System.Drawing.Color.DimGray;
             this.btnFakture.Image = global::BookIT.WinUI.Properties.Resources.faktura;
             this.btnFakture.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnFakture.Location = new System.Drawing.Point(0, 335);
+            this.btnFakture.Location = new System.Drawing.Point(0, 320);
             this.btnFakture.Name = "btnFakture";
             this.btnFakture.Size = new System.Drawing.Size(110, 134);
             this.btnFakture.TabIndex = 3;
@@ -128,7 +131,7 @@ namespace BookIT.WinUI
             this.btnSmjestaj.ForeColor = System.Drawing.Color.DimGray;
             this.btnSmjestaj.Image = global::BookIT.WinUI.Properties.Resources.smjestaj;
             this.btnSmjestaj.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSmjestaj.Location = new System.Drawing.Point(0, 200);
+            this.btnSmjestaj.Location = new System.Drawing.Point(0, 185);
             this.btnSmjestaj.Name = "btnSmjestaj";
             this.btnSmjestaj.Size = new System.Drawing.Size(110, 134);
             this.btnSmjestaj.TabIndex = 2;
@@ -153,7 +156,7 @@ namespace BookIT.WinUI
             this.btnSmjestajiDodaj.ForeColor = System.Drawing.Color.DimGray;
             this.btnSmjestajiDodaj.Image = global::BookIT.WinUI.Properties.Resources.smjestaj_dodaj;
             this.btnSmjestajiDodaj.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSmjestajiDodaj.Location = new System.Drawing.Point(232, 200);
+            this.btnSmjestajiDodaj.Location = new System.Drawing.Point(232, 185);
             this.btnSmjestajiDodaj.Name = "btnSmjestajiDodaj";
             this.btnSmjestajiDodaj.Size = new System.Drawing.Size(110, 134);
             this.btnSmjestajiDodaj.TabIndex = 16;
@@ -179,7 +182,7 @@ namespace BookIT.WinUI
             this.btnSmjestajiPretraga.ForeColor = System.Drawing.Color.DimGray;
             this.btnSmjestajiPretraga.Image = global::BookIT.WinUI.Properties.Resources.smjestaj_pretraga;
             this.btnSmjestajiPretraga.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSmjestajiPretraga.Location = new System.Drawing.Point(116, 200);
+            this.btnSmjestajiPretraga.Location = new System.Drawing.Point(116, 185);
             this.btnSmjestajiPretraga.Name = "btnSmjestajiPretraga";
             this.btnSmjestajiPretraga.Size = new System.Drawing.Size(110, 134);
             this.btnSmjestajiPretraga.TabIndex = 17;
@@ -202,10 +205,10 @@ namespace BookIT.WinUI
             this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnLogout.ForeColor = System.Drawing.Color.DimGray;
             this.btnLogout.Image = global::BookIT.WinUI.Properties.Resources.logout;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLogout.Location = new System.Drawing.Point(520, 62);
+            this.btnLogout.Location = new System.Drawing.Point(521, 50);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(47, 47);
             this.btnLogout.TabIndex = 19;
@@ -216,12 +219,50 @@ namespace BookIT.WinUI
             this.btnLogout.MouseEnter += new System.EventHandler(this.btnLogout_MouseEnter);
             this.btnLogout.MouseLeave += new System.EventHandler(this.btnLogout_MouseLeave);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.ForeColor = System.Drawing.Color.DimGray;
+            this.panel1.Location = new System.Drawing.Point(-2, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(570, 3);
+            this.panel1.TabIndex = 21;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.DimGray;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(-2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(570, 45);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "BookIT - Vlasnik smještaja";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // close
+            // 
+            this.close.AutoSize = true;
+            this.close.BackColor = System.Drawing.Color.DimGray;
+            this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close.ForeColor = System.Drawing.Color.White;
+            this.close.Location = new System.Drawing.Point(544, 6);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(16, 16);
+            this.close.TabIndex = 22;
+            this.close.Text = "X";
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(566, 620);
+            this.Controls.Add(this.close);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnSmjestajiPretraga);
             this.Controls.Add(this.btnSmjestajiDodaj);
@@ -229,6 +270,7 @@ namespace BookIT.WinUI
             this.Controls.Add(this.btnFakture);
             this.Controls.Add(this.btnSmjestaj);
             this.Controls.Add(this.btnMojProfil);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
             this.Text = "BookIT - Vlasnik smještaja";
             this.Load += new System.EventHandler(this.frmMain_Load);
@@ -245,6 +287,9 @@ namespace BookIT.WinUI
         private System.Windows.Forms.Button btnSmjestajiDodaj;
         private System.Windows.Forms.Button btnSmjestajiPretraga;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label close;
     }
 }
 

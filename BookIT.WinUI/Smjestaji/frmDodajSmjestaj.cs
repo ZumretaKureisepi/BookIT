@@ -1,6 +1,5 @@
-﻿using BookIT.Model.Requests;
-using MaterialSkin;
-using MaterialSkin.Controls;
+﻿using BookIT.Model;
+using BookIT.Model.Requests;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +12,7 @@ using System.Windows.Forms;
 
 namespace BookIT.WinUI.Smjestaji
 {
-    public partial class frmDodajSmjestaj : MaterialForm
+    public partial class frmDodajSmjestaj : Form
     {
         private readonly APIService _apiServiceSmjestaji = new APIService("Smjestaji");
         private readonly APIService _apiServiceGradovi = new APIService("Gradovi");
@@ -24,12 +23,14 @@ namespace BookIT.WinUI.Smjestaji
         public frmDodajSmjestaj(frmMain frmMain)
         {
             InitializeComponent();
-       
+
             FrmMain = frmMain;
         }
 
         private async void btnDodaj_Click(object sender, EventArgs e)
         {
+            if (!this.ValidateChildren())
+                return;
 
             SmjestajiInsertRequest request = new SmjestajiInsertRequest
             {
@@ -52,17 +53,23 @@ namespace BookIT.WinUI.Smjestaji
         private async void frmDodajSmjestaj_Load(object sender, EventArgs e)
         {
             var result = await _apiServiceGradovi.Get<List<Model.Grad>>(null);//zasto null ovdje
+            result.Insert(0, new Model.Grad
+            {
+                Naziv = "(odaberite)"
+            });
             cmbLokacije.ValueMember = "GradId";
             cmbLokacije.DisplayMember = "Grad_Drzava";
             cmbLokacije.DataSource = result;
 
-            cmbTipSmjestaja.DataSource = Enum.GetValues(typeof(Model.TipSmjestaja));
+            var enumValues = Enum.GetValues(typeof(Model.TipSmjestaja));
+            cmbTipSmjestaja.DataSource = enumValues;
 
         }
 
         private void txtImeSmjestaja_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtImeSmjestaja.Text))
+            if (string.IsNullOrWhiteSpace(txtImeSmjestaja.Text) &&
+                (cmbLokacije.SelectedItem as Grad).GradId != 0)
             {
                 e.Cancel = true;
                 errorProvider.SetError(txtImeSmjestaja, Properties.Resources.Validation_RequiredField);
@@ -86,7 +93,7 @@ namespace BookIT.WinUI.Smjestaji
         private void cmbLokacije_Validating(object sender, CancelEventArgs e)
         {
             var cmbBox = sender as ComboBox;
-            if (cmbBox.SelectedItem == null)
+            if (cmbBox.SelectedItem == null || (cmbBox.SelectedItem as Grad).GradId == 0)
             {
                 e.Cancel = true;
                 errorProvider.SetError(cmbBox, Properties.Resources.Validation_RequiredField);
@@ -115,6 +122,12 @@ namespace BookIT.WinUI.Smjestaji
         {
             if (e.KeyCode != Keys.Up && e.KeyCode != Keys.Down)
                 e.SuppressKeyPress = true;
+        }
+
+        private void frmDodajSmjestaj_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                                     this.DisplayRectangle);
         }
     }
 }

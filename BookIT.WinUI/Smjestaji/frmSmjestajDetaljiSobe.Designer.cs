@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTipSmjestaja = new System.Windows.Forms.ComboBox();
             this.cmbLokacije = new System.Windows.Forms.ComboBox();
@@ -74,9 +74,9 @@
             // 
             // cmbTipSmjestaja
             // 
-            this.cmbTipSmjestaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.cmbTipSmjestaja.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbTipSmjestaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbTipSmjestaja.ForeColor = System.Drawing.Color.Aquamarine;
+            this.cmbTipSmjestaja.ForeColor = System.Drawing.Color.DimGray;
             this.cmbTipSmjestaja.FormattingEnabled = true;
             this.cmbTipSmjestaja.Location = new System.Drawing.Point(115, 47);
             this.cmbTipSmjestaja.Name = "cmbTipSmjestaja";
@@ -87,9 +87,9 @@
             // 
             // cmbLokacije
             // 
-            this.cmbLokacije.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.cmbLokacije.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbLokacije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbLokacije.ForeColor = System.Drawing.Color.Aquamarine;
+            this.cmbLokacije.ForeColor = System.Drawing.Color.DimGray;
             this.cmbLokacije.FormattingEnabled = true;
             this.cmbLokacije.Location = new System.Drawing.Point(115, 86);
             this.cmbLokacije.Name = "cmbLokacije";
@@ -103,13 +103,13 @@
             this.dgvSobe.AllowUserToAddRows = false;
             this.dgvSobe.AllowUserToDeleteRows = false;
             this.dgvSobe.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Aquamarine;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Aquamarine;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSobe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSobe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSobe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSobe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SobaId,
@@ -122,18 +122,18 @@
             this.dgvSobe.Location = new System.Drawing.Point(32, 210);
             this.dgvSobe.Name = "dgvSobe";
             this.dgvSobe.ReadOnly = true;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Aquamarine;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Aquamarine;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSobe.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            this.dgvSobe.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            this.dgvSobe.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Aquamarine;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSobe.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvSobe.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvSobe.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DimGray;
             this.dgvSobe.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.dgvSobe.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Aquamarine;
+            this.dgvSobe.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.DimGray;
             this.dgvSobe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSobe.Size = new System.Drawing.Size(545, 232);
             this.dgvSobe.TabIndex = 4;
@@ -194,9 +194,9 @@
             // 
             // txtAdresa
             // 
-            this.txtAdresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtAdresa.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtAdresa.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAdresa.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtAdresa.ForeColor = System.Drawing.Color.DimGray;
             this.txtAdresa.Location = new System.Drawing.Point(354, 47);
             this.txtAdresa.Name = "txtAdresa";
             this.txtAdresa.Size = new System.Drawing.Size(223, 13);
@@ -251,9 +251,9 @@
             // 
             // txtOpis
             // 
-            this.txtOpis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtOpis.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtOpis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtOpis.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtOpis.ForeColor = System.Drawing.Color.DimGray;
             this.txtOpis.Location = new System.Drawing.Point(354, 82);
             this.txtOpis.Multiline = true;
             this.txtOpis.Name = "txtOpis";
@@ -271,8 +271,8 @@
             // 
             // clbTipDestinacije
             // 
-            this.clbTipDestinacije.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
-            this.clbTipDestinacije.ForeColor = System.Drawing.Color.Aquamarine;
+            this.clbTipDestinacije.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clbTipDestinacije.ForeColor = System.Drawing.Color.DimGray;
             this.clbTipDestinacije.FormattingEnabled = true;
             this.clbTipDestinacije.Location = new System.Drawing.Point(685, 47);
             this.clbTipDestinacije.Name = "clbTipDestinacije";
@@ -281,9 +281,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel1.ForeColor = System.Drawing.Color.DimGray;
             this.panel1.Location = new System.Drawing.Point(354, 66);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 1);
@@ -293,7 +293,7 @@
             // 
             this.close.AutoSize = true;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
+            this.close.ForeColor = System.Drawing.Color.DimGray;
             this.close.Location = new System.Drawing.Point(829, 2);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(16, 16);
@@ -361,7 +361,7 @@
             this.AcceptButton = this.btnSpremi;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(845, 497);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblLongitude);
@@ -384,13 +384,14 @@
             this.Controls.Add(this.cmbLokacije);
             this.Controls.Add(this.cmbTipSmjestaja);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.Aquamarine;
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmSmjestajDetaljiSobe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Detalji sobe";
             this.Load += new System.EventHandler(this.frmSmjestajDetaljiSobe_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmSmjestajDetaljiSobe_Paint);
             this.Resize += new System.EventHandler(this.frmSmjestajDetaljiSobe_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSobe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();

@@ -262,5 +262,11 @@ namespace BookIT.WinUI.Smjestaji
             }
             this.Show();
         }
+
+        private void frmSmjestajDetaljiSobe_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

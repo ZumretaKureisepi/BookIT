@@ -193,7 +193,7 @@
             // btnOdbijRezervaciju
             // 
             this.btnOdbijRezervaciju.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOdbijRezervaciju.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnOdbijRezervaciju.ForeColor = System.Drawing.Color.DimGray;
             this.btnOdbijRezervaciju.Location = new System.Drawing.Point(325, 337);
             this.btnOdbijRezervaciju.Name = "btnOdbijRezervaciju";
             this.btnOdbijRezervaciju.Size = new System.Drawing.Size(130, 23);
@@ -206,7 +206,7 @@
             // 
             this.close.AutoSize = true;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
+            this.close.ForeColor = System.Drawing.Color.DimGray;
             this.close.Location = new System.Drawing.Point(490, 4);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(16, 16);
@@ -218,7 +218,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(505, 374);
             this.Controls.Add(this.close);
             this.Controls.Add(this.btnOdbijRezervaciju);
@@ -237,13 +237,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.Aquamarine;
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmRezervacijeDetalji";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Detalji rezervacije";
             this.Load += new System.EventHandler(this.frmRezervacijeDetalji_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmRezervacijeDetalji_Paint);
             this.Resize += new System.EventHandler(this.frmRezervacijeDetalji_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();

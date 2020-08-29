@@ -47,7 +47,7 @@
             // 
             this.close.AutoSize = true;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
+            this.close.ForeColor = System.Drawing.Color.DimGray;
             this.close.Location = new System.Drawing.Point(513, 9);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(16, 16);
@@ -91,9 +91,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel1.ForeColor = System.Drawing.Color.DimGray;
             this.panel1.Location = new System.Drawing.Point(63, 65);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(84, 1);
@@ -101,9 +101,9 @@
             // 
             // txtLat
             // 
-            this.txtLat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtLat.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLat.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLat.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtLat.ForeColor = System.Drawing.Color.DimGray;
             this.txtLat.Location = new System.Drawing.Point(63, 49);
             this.txtLat.Name = "txtLat";
             this.txtLat.Size = new System.Drawing.Size(84, 13);
@@ -121,9 +121,9 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel2.ForeColor = System.Drawing.Color.DimGray;
             this.panel2.Location = new System.Drawing.Point(226, 67);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(84, 1);
@@ -131,9 +131,9 @@
             // 
             // txtLng
             // 
-            this.txtLng.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtLng.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLng.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtLng.ForeColor = System.Drawing.Color.DimGray;
             this.txtLng.Location = new System.Drawing.Point(226, 51);
             this.txtLng.Name = "txtLng";
             this.txtLng.Size = new System.Drawing.Size(84, 13);
@@ -158,7 +158,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(541, 536);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtLng);
@@ -170,12 +170,13 @@
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.close);
-            this.ForeColor = System.Drawing.Color.Aquamarine;
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmOdaberiLokaciju";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dodatne usluge";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmOdaberiLokaciju_Paint);
             this.Resize += new System.EventHandler(this.frmOdaberiLokaciju_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

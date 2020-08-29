@@ -73,9 +73,9 @@
             // 
             // txtPrezime
             // 
-            this.txtPrezime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtPrezime.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPrezime.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPrezime.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtPrezime.ForeColor = System.Drawing.Color.DimGray;
             this.txtPrezime.Location = new System.Drawing.Point(98, 68);
             this.txtPrezime.Name = "txtPrezime";
             this.txtPrezime.Size = new System.Drawing.Size(166, 13);
@@ -93,9 +93,9 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
             this.txtEmail.Location = new System.Drawing.Point(98, 110);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(166, 13);
@@ -113,9 +113,9 @@
             // 
             // txtLozinka
             // 
-            this.txtLozinka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtLozinka.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLozinka.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLozinka.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtLozinka.ForeColor = System.Drawing.Color.DimGray;
             this.txtLozinka.Location = new System.Drawing.Point(98, 40);
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.Size = new System.Drawing.Size(166, 13);
@@ -134,9 +134,9 @@
             // 
             // txtPotvrdaLozinke
             // 
-            this.txtPotvrdaLozinke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtPotvrdaLozinke.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPotvrdaLozinke.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPotvrdaLozinke.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtPotvrdaLozinke.ForeColor = System.Drawing.Color.DimGray;
             this.txtPotvrdaLozinke.Location = new System.Drawing.Point(98, 89);
             this.txtPotvrdaLozinke.Name = "txtPotvrdaLozinke";
             this.txtPotvrdaLozinke.Size = new System.Drawing.Size(166, 13);
@@ -173,9 +173,9 @@
             // 
             // cmbLokacije
             // 
-            this.cmbLokacije.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.cmbLokacije.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbLokacije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbLokacije.ForeColor = System.Drawing.Color.Aquamarine;
+            this.cmbLokacije.ForeColor = System.Drawing.Color.DimGray;
             this.cmbLokacije.FormattingEnabled = true;
             this.cmbLokacije.Location = new System.Drawing.Point(98, 241);
             this.cmbLokacije.Name = "cmbLokacije";
@@ -187,7 +187,7 @@
             // btnSpasi
             // 
             this.btnSpasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSpasi.ForeColor = System.Drawing.Color.Aquamarine;
+            this.btnSpasi.ForeColor = System.Drawing.Color.DimGray;
             this.btnSpasi.Location = new System.Drawing.Point(133, 454);
             this.btnSpasi.Name = "btnSpasi";
             this.btnSpasi.Size = new System.Drawing.Size(75, 23);
@@ -208,7 +208,7 @@
             this.gbxPassword.Controls.Add(this.label4);
             this.gbxPassword.Controls.Add(this.txtLozinka);
             this.gbxPassword.Controls.Add(this.txtPotvrdaLozinke);
-            this.gbxPassword.ForeColor = System.Drawing.Color.Aquamarine;
+            this.gbxPassword.ForeColor = System.Drawing.Color.DimGray;
             this.gbxPassword.Location = new System.Drawing.Point(24, 302);
             this.gbxPassword.Name = "gbxPassword";
             this.gbxPassword.Size = new System.Drawing.Size(298, 137);
@@ -218,9 +218,9 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel7.BackColor = System.Drawing.Color.DimGray;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel7.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel7.ForeColor = System.Drawing.Color.DimGray;
             this.panel7.Location = new System.Drawing.Point(97, 101);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(167, 1);
@@ -228,9 +228,9 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel6.BackColor = System.Drawing.Color.DimGray;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel6.ForeColor = System.Drawing.Color.DimGray;
             this.panel6.Location = new System.Drawing.Point(97, 52);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(167, 1);
@@ -255,7 +255,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.txtAdresa);
-            this.groupBox1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.groupBox1.ForeColor = System.Drawing.Color.DimGray;
             this.groupBox1.Location = new System.Drawing.Point(24, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(298, 284);
@@ -265,9 +265,9 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel5.BackColor = System.Drawing.Color.DimGray;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel5.ForeColor = System.Drawing.Color.DimGray;
             this.panel5.Location = new System.Drawing.Point(97, 208);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(167, 1);
@@ -275,9 +275,9 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel3.BackColor = System.Drawing.Color.DimGray;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel3.ForeColor = System.Drawing.Color.DimGray;
             this.panel3.Location = new System.Drawing.Point(97, 165);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(167, 1);
@@ -285,9 +285,9 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel2.ForeColor = System.Drawing.Color.DimGray;
             this.panel2.Location = new System.Drawing.Point(97, 122);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(167, 1);
@@ -295,9 +295,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel1.ForeColor = System.Drawing.Color.DimGray;
             this.panel1.Location = new System.Drawing.Point(97, 80);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(167, 1);
@@ -305,9 +305,9 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel4.BackColor = System.Drawing.Color.DimGray;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.ForeColor = System.Drawing.Color.Aquamarine;
+            this.panel4.ForeColor = System.Drawing.Color.DimGray;
             this.panel4.Location = new System.Drawing.Point(97, 41);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(167, 1);
@@ -315,9 +315,9 @@
             // 
             // txtTelefon
             // 
-            this.txtTelefon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtTelefon.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTelefon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefon.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtTelefon.ForeColor = System.Drawing.Color.DimGray;
             this.txtTelefon.Location = new System.Drawing.Point(98, 153);
             this.txtTelefon.Mask = "(999) 00 000-0000";
             this.txtTelefon.Name = "txtTelefon";
@@ -328,9 +328,9 @@
             // 
             // txtIme
             // 
-            this.txtIme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtIme.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtIme.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIme.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtIme.ForeColor = System.Drawing.Color.DimGray;
             this.txtIme.Location = new System.Drawing.Point(98, 29);
             this.txtIme.Name = "txtIme";
             this.txtIme.Size = new System.Drawing.Size(166, 13);
@@ -348,9 +348,9 @@
             // 
             // txtAdresa
             // 
-            this.txtAdresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.txtAdresa.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtAdresa.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAdresa.ForeColor = System.Drawing.Color.Aquamarine;
+            this.txtAdresa.ForeColor = System.Drawing.Color.DimGray;
             this.txtAdresa.Location = new System.Drawing.Point(98, 196);
             this.txtAdresa.Name = "txtAdresa";
             this.txtAdresa.Size = new System.Drawing.Size(166, 13);
@@ -361,7 +361,7 @@
             // 
             this.close.AutoSize = true;
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Aquamarine;
+            this.close.ForeColor = System.Drawing.Color.DimGray;
             this.close.Location = new System.Drawing.Point(332, 1);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(16, 16);
@@ -374,7 +374,7 @@
             this.AcceptButton = this.btnSpasi;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(21)))), ((int)(((byte)(24)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(349, 499);
             this.Controls.Add(this.close);
             this.Controls.Add(this.groupBox1);
@@ -385,6 +385,7 @@
             this.Name = "frmRegistracija";
             this.Text = "Registracija";
             this.Load += new System.EventHandler(this.frmRegistracija_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmRegistracija_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.gbxPassword.ResumeLayout(false);
             this.gbxPassword.PerformLayout();

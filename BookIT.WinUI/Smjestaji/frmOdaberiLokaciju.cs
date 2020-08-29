@@ -136,5 +136,11 @@ namespace BookIT.WinUI.Smjestaji
         {
             DialogResult = DialogResult.OK;
         }
+
+        private void frmOdaberiLokaciju_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

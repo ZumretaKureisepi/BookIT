@@ -78,5 +78,11 @@ namespace BookIT.WinUI.Fakture
         {
             await BindForm();
         }
+
+        private void frmFakture_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

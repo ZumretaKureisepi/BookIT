@@ -71,5 +71,11 @@ namespace BookIT.WinUI.Korisnici
         {
             await BindForm();
         }
+
+        private void frmKorisnici_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

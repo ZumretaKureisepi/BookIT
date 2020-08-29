@@ -79,5 +79,11 @@ namespace BookIT.WinUI.Smjestaji
             close.Location = new Point(this.Width - 24, 5);
 
         }
+
+        private void frmSobaSlike_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

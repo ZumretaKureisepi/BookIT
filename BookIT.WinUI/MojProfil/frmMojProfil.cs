@@ -235,5 +235,11 @@ namespace BookIT.WinUI.MojProfil
             if (e.KeyCode != Keys.Up && e.KeyCode != Keys.Down)
                 e.SuppressKeyPress = true;
         }
+
+        private void frmMojProfil_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

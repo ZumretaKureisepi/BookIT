@@ -101,5 +101,11 @@ namespace BookIT.WinUI.Rezervacije
         {
             await BindForm();
         }
+
+        private void frmRezervacije_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }

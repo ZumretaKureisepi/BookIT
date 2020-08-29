@@ -95,5 +95,11 @@ namespace BookIT.WinUI.Rezervacije
             close.Location = new Point(this.Width - 24, 5);
 
         }
+
+        private void frmRezervacijeDetalji_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.DimGray, 4),
+                         this.DisplayRectangle);
+        }
     }
 }
