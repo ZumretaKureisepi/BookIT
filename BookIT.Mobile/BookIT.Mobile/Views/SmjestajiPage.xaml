@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BookIT.Mobile.ViewModels"
+             xmlns:converters="clr-namespace:BookIT.Mobile.Converters"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Pickers;assembly=Syncfusion.SfPicker.XForms"
+             Title="{Binding Title}"
+             x:Class="BookIT.Mobile.Views.SmjestajiPage"
+             x:Name="SmjestajiPage1">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatible with Xamarin Live Player -->
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#191919</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+            <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Padding="10" Grid.Row="0" Grid.ColumnSpan="6">
+                    <Label Text="Lokacija:"/>
+                    <Entry Text="{Binding Lokacija}"></Entry>
+                </StackLayout >
+                <StackLayout Padding="10,0,5,10" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0">
+                    <Label Text="Datum prijave:"/>
+                    <DatePicker Date="{Binding CheckInDate}"></DatePicker>
+                </StackLayout>
+                <StackLayout Padding="10,0,10,10" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="3">
+                    <Label Text="Datum odjave:"/>
+                    <DatePicker Date="{Binding CheckOutDate}"></DatePicker>
+                </StackLayout>
+
+                <StackLayout Padding="10,0,5,10" Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="0">
+                    <Label Text="Odrasli:"/>
+                    <Entry Text="{Binding Odrasli}"></Entry>
+                </StackLayout>
+                <StackLayout Padding="10,0,10,10" Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="3">
+                    <Label Text="Djeca:"/>
+                    <Entry Text="{Binding Djeca}"></Entry>
+                </StackLayout>
+                <StackLayout Padding="5,0,5,0" Grid.Row="3" Grid.ColumnSpan="6">
+                    <Button Text="Pretraga" Command="{Binding NavigateToPretragaRezultatPageCommand}"></Button>
+                </StackLayout >
+                <StackLayout Padding="5,0,5,0" Grid.Row="4" Grid.ColumnSpan="6">
+                    <Label Text="Preporučeni smještaji:" FontAttributes="Bold" FontSize="18" />
+                </StackLayout >
+                
+
+                <ListView Grid.Row="5" Grid.ColumnSpan="6" ItemsSource="{Binding SmjestajiList}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout Grid.Column="0" BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" >
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" >
+                                            <Image Source="{Binding Slika, Converter={StaticResource imgConv}}" VerticalOptions="Center" WidthRequest="100" Margin="10"/>
+                                        </StackLayout>
+                                    </StackLayout>
+
+
+                                    <StackLayout Grid.Column="1" Padding="10">
+                                        <Label Text="{Binding Naziv}" 
+                                       LineBreakMode="NoWrap" 
+                                       Style="{DynamicResource ListItemTextStyle}" 
+                                       FontSize="16" />
+                                        <StackLayout Orientation="Horizontal">
+
+                                            <Label Text="{Binding FinalnaOcjenaStr}" 
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListItemDetailTextStyle}"
+                                       FontSize="13" />
+                                            <Label Text="{Binding OcjenaOpis}" 
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListItemDetailTextStyle}"
+                                       FontSize="13" />
+
+                                        </StackLayout>
+                                        <Label Text="{Binding Opis}" 
+                                       Style="{DynamicResource ListItemDetailTextStyle}"
+                                       FontSize="13" FontAttributes="Bold"/>
+                                        <Button Text="Rezervišite sada" Command="{Binding Path=BindingContext.BookCommand, Source={x:Reference SmjestajiPage1}}" CommandParameter="{Binding .}"></Button>
+                                    </StackLayout>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+            </Grid>
+            
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

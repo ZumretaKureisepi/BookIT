@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookIT.Mobile.Views.FakturaDetaljiPage"
+             Title="{Binding Title}"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+
+            <StackLayout Orientation="Horizontal" Padding="0,0,0,15">
+                <Label Text="Naziv smještaja:" FontSize="22"></Label>
+                <Label Text="{Binding Rezervacija.SmjestajNaziv}" FontSize="22" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Datum rezervacije:"></Label>
+                <Label Text="{Binding Rezervacija.DatumRezervacije,StringFormat='{0:MMMM dd, yyyy}'}" />
+            </StackLayout> 
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Datum fakture:"></Label>
+                <Label Text="{Binding Faktura.DatumFakture,StringFormat='{0:MMMM dd, yyyy}'}" />
+            </StackLayout> 
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Datum dolaska:"></Label>
+                <Label Text="{Binding Rezervacija.CheckInDate,StringFormat='{0:MMMM dd, yyyy}'}" />
+            </StackLayout> 
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Datum odlaska:"></Label>
+                <Label Text="{Binding Rezervacija.CheckOutDate,StringFormat='{0:MMMM dd, yyyy}'}" />
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Text="Klijent:"></Label>
+                    <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal" >
+                        <Label Text="{Binding Rezervacija.Klijent.Korisnik.Ime}"></Label>
+                        <Label Text="{Binding Rezervacija.Klijent.Korisnik.Prezime}"></Label>
+                    </StackLayout>
+                    <Label Grid.Row="2" Grid.Column="0" Text="{Binding Rezervacija.Klijent.Korisnik.Adresa}"></Label>
+                    <Label Grid.Row="3" Grid.Column="0" Text="{Binding Rezervacija.Klijent.Korisnik.Grad.Grad_Drzava}"></Label>
+
+                    <Label Grid.Row="0" Grid.Column="1" Text="Vlasnik smještaja:"></Label>
+                    <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal" >
+                        <Label Text="{Binding Rezervacija.Smjestaj.VlasnikSmjestaja.Korisnik.Ime}"></Label>
+                        <Label Text="{Binding Rezervacija.Smjestaj.VlasnikSmjestaja.Korisnik.Prezime}"></Label>
+                    </StackLayout>
+                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Rezervacija.Smjestaj.VlasnikSmjestaja.Korisnik.Adresa}"></Label>
+                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Rezervacija.Smjestaj.VlasnikSmjestaja.Korisnik.Grad.Grad_Drzava}"></Label>
+
+                </Grid>
+
+            </StackLayout>
+
+            <ListView ItemsSource="{Binding Stavke}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Grid>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" FontAttributes="Bold" FontSize="16"  Text="{Binding Naziv}"></Label>
+
+                                    <StackLayout Grid.Column="1" Orientation="Horizontal" >
+                                        <Label FontSize="16" Text="{Binding Cijena, StringFormat='{0:C2}'}"></Label>
+
+                                    </StackLayout>
+                                </Grid>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

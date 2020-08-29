@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BookIT.Mobile.ViewModels"
+             xmlns:converters="clr-namespace:BookIT.Mobile.Converters"
+             x:Class="BookIT.Mobile.Views.SmjestajiPretragaRezultatPage"
+             Title="{Binding Title}"
+             x:Name="SmjestajiPretragaRezultatPage1">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatible with Xamarin Live Player -->
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#191919</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+            <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+
+        <StackLayout>
+
+            <!--<StackLayout Padding="5,0,5,0">
+                <Button Text="Više filtera" Command="{Binding NavigateToViseFilteraCommand}"></Button>
+            </StackLayout >-->
+
+            <ListView ItemsSource="{Binding SmjestajiList}" ItemTapped="ListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0" BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" >
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" >
+                                        <Image Source="{Binding Slika, Converter={StaticResource imgConv}}" VerticalOptions="Center" WidthRequest="100" Margin="10"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+
+                                <StackLayout Grid.Column="1" Padding="10">
+                                    <Label Text="{Binding Naziv}" 
+                                       LineBreakMode="NoWrap" 
+                                       Style="{DynamicResource ListItemTextStyle}" 
+                                       FontSize="16" />
+                                    <StackLayout Orientation="Horizontal">
+
+                                        <Label Text="{Binding FinalnaOcjenaStr}" 
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListItemDetailTextStyle}"
+                                       FontSize="13" />
+                                        <Label Text="{Binding OcjenaOpis}" 
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListItemDetailTextStyle}"
+                                       FontSize="13" />
+
+                                    </StackLayout>
+                                    <Label Text="{Binding Opis}" 
+                                       Style="{DynamicResource ListItemDetailTextStyle}"
+                                       FontSize="13" FontAttributes="Bold"/>
+                                    <Button Text="Rezervišite sada" Command="{Binding Path=BindingContext.BookCommand, Source={x:Reference SmjestajiPretragaRezultatPage1}}" CommandParameter="{Binding .}"></Button>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

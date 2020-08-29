@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookIT.Mobile.Views.OtkaziRezervacijuPage"
+             Title="{Binding Title}"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Detalji rezervacije"
+                   FontSize="18" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Datum rezervacije:"></Label>
+                <Label Text="{Binding Rezervacija.DatumRezervacije,StringFormat='{0:MMMM dd, yyyy}'}" />
+            </StackLayout>
+
+           
+            <ListView ItemsSource="{Binding Stavke}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Grid>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" FontAttributes="Bold" FontSize="16"  Text="{Binding Naziv}"></Label>
+
+                                    <StackLayout Grid.Column="1" Orientation="Horizontal" >
+                                        <Label FontSize="16" Text="{Binding Cijena, StringFormat='{0:C2}'}"></Label>
+
+                                    </StackLayout>
+                                </Grid>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Otkažite" Command="{Binding OtkaziteCommand}" ></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

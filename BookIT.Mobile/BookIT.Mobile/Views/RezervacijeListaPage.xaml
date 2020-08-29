@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BookIT.Mobile.ViewModels"
+             xmlns:converters="clr-namespace:BookIT.Mobile.Converters"
+             x:Class="BookIT.Mobile.Views.RezervacijeListaPage"
+             x:Name="RezervacijeListaPage1"
+             Title="{Binding Title}"
+             >
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding RezervacijeList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <StackLayout Padding="10" >
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Text="{Binding Smjestaj.Naziv}" 
+                                    LineBreakMode="NoWrap" 
+                                    Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="16" 
+                                           Grid.Row="0" Grid.Column="0"
+                                           />
+                                    <StackLayout Orientation="Horizontal"
+                                            Grid.Row="1" Grid.Column="0">
+                                        <Label Text="{Binding CheckInDate,StringFormat='{0:MMMM dd, yyyy}'}" 
+                                    LineBreakMode="NoWrap" 
+                                    FontSize="16" />
+                                        <Label Text="-" 
+                                    LineBreakMode="NoWrap" 
+                                    FontSize="16" />
+                                        <Label Text="{Binding CheckOutDate,StringFormat='{0:MMMM dd, yyyy}'}" 
+                                    LineBreakMode="NoWrap" 
+                                    FontSize="16" />
+                                    </StackLayout>
+
+                                    <Button Text="Plati rezervaciju" IsVisible="{Binding MozePlatiti}"
+                                            Grid.Row="0" Grid.Column="1" Command="{Binding Path=BindingContext.PlatiCommand, Source={x:Reference RezervacijeListaPage1}}" CommandParameter="{Binding .}" />
+
+                                    <Button Text="Otkaži rezervaciju"   IsVisible="{Binding MozeOtkazati}"
+                                            Grid.Row="1" Grid.Column="1" Command="{Binding Path=BindingContext.OtkaziCommand, Source={x:Reference RezervacijeListaPage1}}" CommandParameter="{Binding .}"/>           
+
+                                    <Button Text="Ocijeni rezervaciju"   IsVisible="{Binding MozeOcijeniti}"
+                                            Grid.Row="0" Grid.Column="2" Command="{Binding Path=BindingContext.OcijeniCommand, Source={x:Reference RezervacijeListaPage1}}" CommandParameter="{Binding .}"/>
+
+                                    <StackLayout Orientation="Horizontal"
+                                            Grid.Row="0" Grid.Column="3">
+                                        <Label Text="{Binding StatusText}" 
+                                        LineBreakMode="NoWrap" 
+                                        FontSize="16" />
+                                    </StackLayout>
+                                    
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

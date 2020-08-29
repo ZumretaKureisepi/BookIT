@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:BookIT.Mobile.Converters"
+             x:Class="BookIT.Mobile.Views.SmjestajDetaljiPage"
+             Title="{Binding Title}"
+             
+             >
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatible with Xamarin Live Player -->
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#191919</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+            <local:ImageConverter x:Key="imgConv"></local:ImageConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <ScrollView>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+          
+                <StackLayout Grid.Row="0" Grid.ColumnSpan="7" Padding="10">
+                    <Label Text="{Binding Smjestaj.Naziv}" FontSize="Medium"></Label>
+                </StackLayout>
+
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="7">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                        <ContentView Padding="0,5,0,5" VerticalOptions="FillAndExpand">
+                            <Image x:Name="PrikazanaSlikaImage" Source="{Binding PrikazanaSlika, Converter={StaticResource imgConv}}" VerticalOptions="Center" HeightRequest="200" >
+
+                                <Image.GestureRecognizers>
+                                    <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped_Left"/>
+                                    <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped_Right"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                        </ContentView>
+                    </StackLayout>
+
+
+                    <syncfusion:SfListView Orientation="Horizontal" ItemsSource="{Binding SlikeList}" VerticalOptions="CenterAndExpand" ItemSpacing="5" ItemSize="150" IsScrollBarVisible="true" HeightRequest="120">
+                        <syncfusion:SfListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout VerticalOptions="FillAndExpand" Padding="5,0,5,0" HorizontalOptions="FillAndExpand">
+                                        <Image Source="{Binding Slika, Converter={StaticResource imgConv}}" Aspect="Fill" HeightRequest="100"/>
+
+                                        <StackLayout.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped" />
+                                        </StackLayout.GestureRecognizers>
+
+
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </syncfusion:SfListView.ItemTemplate>
+                    </syncfusion:SfListView>
+
+
+                </StackLayout>
+
+
+                <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                    <Image Source="{Binding Zvjezdica1}" VerticalOptions="Center" HeightRequest="40" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                    <Image Source="{Binding Zvjezdica2}" VerticalOptions="Center" HeightRequest="40" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                    <Image Source="{Binding Zvjezdica3}" VerticalOptions="Center" HeightRequest="40" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="3" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                    <Image Source="{Binding Zvjezdica4}" VerticalOptions="Center" HeightRequest="40" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="4" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                    <Image Source="{Binding Zvjezdica5}" VerticalOptions="Center" HeightRequest="40" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="5" >
+                    <Label Text="{Binding FinalnaOcjenaStr}" FontAttributes="Bold" FontSize="Medium"></Label>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="7" Orientation="Horizontal" Padding="10">
+                    <Label Text="Cijena za " FontSize="Medium"></Label>
+                    <Label Text="{Binding BrojDana}" FontSize="Medium"></Label>
+                    <Label Text="{Binding StrNoci}" FontSize="Medium"></Label>
+                </StackLayout>
+                <StackLayout Grid.Row="4" Grid.ColumnSpan="7" Orientation="Horizontal" Padding="10">
+                    <Label Text="{Binding CijenaText}"></Label>
+                </StackLayout>
+                <StackLayout Grid.Row="5" Grid.ColumnSpan="7" Orientation="Horizontal" Padding="10">
+                    <Label Text="{Binding PorezText}"></Label>
+                </StackLayout>
+
+
+                <Button Text="Učitaj lokaciju na karti" Grid.Row="6" Grid.ColumnSpan="7"  Clicked="Button_Clicked"/>
+                <WebView x:Name="webView" Grid.Row="7" WidthRequest="320" Grid.ColumnSpan="7" HeightRequest="400" />
+
+                <StackLayout Grid.Row="8" Grid.ColumnSpan="7" Orientation="Horizontal" Padding="10">
+                    <Label Text="{Binding Smjestaj.Lokacija}"></Label>
+                </StackLayout>
+                <StackLayout Grid.Row="9" Grid.ColumnSpan="7" IsVisible="{Binding IsApartman}" Padding="10">
+                    <ListView  ItemsSource="{Binding CollectionDodatneUsluge}" RowHeight="33" HeightRequest="{Binding DodatneUslugeListHeight}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <SwitchCell Text="{Binding Naziv}" On="{Binding Checked}" />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+                <StackLayout Grid.Row="10" Grid.ColumnSpan="7" Padding="10">
+                    <Button Text="{Binding ButtonTxt}" Command="{Binding NavigateCommand}"></Button>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

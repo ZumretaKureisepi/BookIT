@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookIT.Mobile.Views.RegistracijaPage"
+             Title="{Binding Title}"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Ime:"/>
+            <Entry Text="{Binding Request.Ime}"></Entry>
+            <Label Text="Prezime:"/>
+            <Entry Text="{Binding Request.Prezime}"></Entry>
+            <Label Text="Email:"/>
+            <Entry Text="{Binding Request.Email}"></Entry>
+            <Label Text="Adresa:"/>
+            <Entry Text="{Binding Request.Adresa}"></Entry>
+            <Label Text="Broj mobitela:"/>
+            <Entry Text="{Binding Request.BrojMobitela}"></Entry>
+            <Label Text="Država:"/>
+            <Picker ItemsSource="{Binding DrzaveList}" SelectedIndexChanged="Picker_SelectedIndexChanged" SelectedItem="{Binding OdabranaDrzava, Mode=TwoWay}" ItemDisplayBinding="{Binding Naziv}"></Picker>
+            <Label Text="Grad:"/>
+            <Picker ItemsSource="{Binding GradoviList}" SelectedItem="{Binding OdabraniGrad, Mode=TwoWay}" ItemDisplayBinding="{Binding Naziv}"></Picker>
+            <Label Text="Lozinka:"/>
+            <Entry Text="{Binding Request.Password}" IsPassword="True"></Entry>
+            <Label Text="Potvrda lozinke:"/>
+            <Entry Text="{Binding Request.PasswordPotvrda}" IsPassword="True"></Entry>
+            
+            <Button Text="Registrujte se" Command="{Binding SpremiteCommand}"></Button>
+            <Button Text="Povratak na Login" Command="{Binding BackToLoginCommand} " VerticalOptions="EndAndExpand"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

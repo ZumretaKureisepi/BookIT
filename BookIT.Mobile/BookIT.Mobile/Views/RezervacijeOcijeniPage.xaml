@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookIT.Mobile.Views.RezervacijeOcijeniPage"
+             x:Name="RezervacijeOcijeniPage1"
+             Title="{Binding Title}"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <ListView ItemsSource="{Binding OcjeneList}" RowHeight="100">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+
+                                <Label Grid.ColumnSpan="7" FontAttributes="Bold" FontSize="16" Text="{Binding VrstaOcjene}">
+                                </Label>
+
+                                <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                                    <ImageButton Source="{Binding Zvjezdica1}" IsVisible="{Binding Visible}" VerticalOptions="Center" HeightRequest="40" Command="{Binding Path=BindingContext.Rate1StarCommand, Source={x:Reference RezervacijeOcijeniPage1}}"
+                                            CommandParameter="{Binding .}" >
+                                    </ImageButton>
+                                </StackLayout>
+
+
+                                <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                                    <ImageButton Source="{Binding Zvjezdica2}"
+                                                 Command="{Binding Path=BindingContext.Rate2StarCommand, Source={x:Reference RezervacijeOcijeniPage1}}" 
+                                                 CommandParameter="{Binding .}"
+                                                 VerticalOptions="Center" HeightRequest="40" >
+                                    </ImageButton>
+                                </StackLayout>
+                                <StackLayout Grid.Row="1" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                                    <ImageButton Source="{Binding Zvjezdica3}" 
+                                                 Command="{Binding Path=BindingContext.Rate3StarCommand, Source={x:Reference RezervacijeOcijeniPage1}}"
+                                                 CommandParameter="{Binding .}"
+                                                 VerticalOptions="Center" HeightRequest="40" >
+                                    </ImageButton>
+                                </StackLayout>
+                                <StackLayout Grid.Row="1" Grid.Column="3" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                                    <ImageButton Source="{Binding Zvjezdica4}" VerticalOptions="Center" HeightRequest="40" 
+                                                 Command="{Binding Path=BindingContext.Rate4StarCommand, Source={x:Reference RezervacijeOcijeniPage1}}"
+                                                 CommandParameter="{Binding .}"
+                                                 >
+                                    </ImageButton>
+                                </StackLayout>
+                                <StackLayout Grid.Row="1" Grid.Column="4" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                                    <ImageButton Source="{Binding Zvjezdica5}" 
+                                                 Command="{Binding Path=BindingContext.Rate5StarCommand, Source={x:Reference RezervacijeOcijeniPage1}}"
+                                                 CommandParameter="{Binding .}"
+                                                 VerticalOptions="Center" HeightRequest="40" >
+                                    </ImageButton>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Spremi ocjenu" Command="{Binding SpremiOcjenuCommand}"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

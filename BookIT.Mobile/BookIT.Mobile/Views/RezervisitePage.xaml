@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookIT.Mobile.Views.RezervisitePage"
+             Title="Rezervacija uspješna">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Hvala Vam na zahtjevu za rezervaciju. Vlasnik smještaja će Vas obavijestiti o dostupnosti."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Povratak" Command="{Binding NavigateToMainPageCommand}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

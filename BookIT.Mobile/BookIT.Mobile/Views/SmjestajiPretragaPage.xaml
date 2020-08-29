@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BookIT.Mobile.ViewModels"
+             xmlns:forms="clr-namespace:Xamarin.RangeSlider.Forms;assembly=Xamarin.RangeSlider.Forms"
+             Title="{Binding Title}"
+             x:Class="BookIT.Mobile.Views.SmjestajiPretragaPage">
+
+
+    <ContentPage.BindingContext>
+        <vm:SmjestajiPretragaViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <TableView Intent="Form" VerticalOptions="Start" HeightRequest="65">
+                    <TableRoot>
+                        <TableSection Title="Raspon cijene">
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <forms:RangeSlider x:Name="RangeSlider" MinimumValue="20" MaximumValue="1000" LowerValue="200" UpperValue="500" StepValue="10" StepValueContinuously="False" VerticalOptions="Center" TextSize="15" ShowTextAboveThumbs="true"  TextFormat="$0"/>
+                <TableView Intent="Form" RowHeight="50" HeightRequest="720">
+                    <TableRoot>
+
+                        <TableSection Title="Tip smještaja">
+                            <SwitchCell Text="Hoteli" On="{Binding Hoteli}" />
+                            <SwitchCell Text="Apartmani" On="{Binding Apartmani}"/>
+                            <SwitchCell Text="Hosteli" On="{Binding Hosteli}"/>
+                            <SwitchCell Text="Vila" On="{Binding Vile}"/>
+                            <SwitchCell Text="Kuća" On="{Binding Kuce}"/>
+                            <SwitchCell Text="Motel" On="{Binding Moteli}"/>
+                        </TableSection>
+
+                        <TableSection Title="Ocjena">
+                            <SwitchCell Text="Neocjenjeni" On="{Binding Neocjenjeni}" />
+                            <SwitchCell Text="1 zvjezdica" On="{Binding JednaZvjezdica}"/>
+                            <SwitchCell Text="2 zvjezdice" On="{Binding DvijeZvjezdice}"/>
+                            <SwitchCell Text="3 zvjezdice" On="{Binding TriZvjezdice}"/>
+                            <SwitchCell Text="4 zvjezdice" On="{Binding CetiriZvjezdice}"/>
+                            <SwitchCell Text="5 zvjezdica" On="{Binding PetZvjezdica}"/>
+                        </TableSection>
+
+                    </TableRoot>
+                </TableView>
+
+                <TableView Intent="Form" VerticalOptions="Start" HeightRequest="65">
+                    <TableRoot>
+                        <TableSection Title="Dodatne usluge">
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <ListView ItemsSource="{Binding DodatneUslugeList}" RowHeight="50">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <SwitchCell Text="{Binding Naziv}" On="{Binding Checked}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
